@@ -28,7 +28,7 @@ export const HypothermiaAnalysis: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-3 h-[320px]">
           <ResponsiveContainer width="100%" height="100%">
-            <AreaChart data={HYPOTHERMIA_RISK_DATA} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+            <AreaChart data={HYPOTHERMIA_RISK_DATA} margin={{ top: 10, right: 30, left: 0, bottom: 20 }}>
               <defs>
                 <linearGradient id="colorHal" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.3}/>
@@ -47,10 +47,12 @@ export const HypothermiaAnalysis: React.FC = () => {
               <XAxis 
                 dataKey="temp" 
                 reversed 
+                interval={0}
+                height={50}
                 axisLine={false} 
                 tickLine={false} 
                 tick={{fontSize: 11, fontWeight: 700}} 
-                label={{ value: '核心体温 (°C)', position: 'insideBottom', offset: -5, fontSize: 10, fill: '#94a3b8' }}
+                label={{ value: '核心体温 (°C)', position: 'insideBottom', offset: 0, fontSize: 10, fill: '#94a3b8' }}
               />
               <YAxis 
                 axisLine={false} 
