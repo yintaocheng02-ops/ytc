@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of 中国徒步安全与鳌太线风险分析系统",
+  "description": "基于数据可视化的中国户外徒步（重点为鳌太线）死亡事故原因分析及安全解决方案研究平台。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
